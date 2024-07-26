@@ -1,0 +1,90 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  html,
+  body {
+    font-family: "Poppins", sans-serif;
+    color: #e0e0e0; /* Light grey for text */
+    background-color: #1e1e1e; /* Matte black background */
+  }
+  
+  canvas {
+    background-color: #121212; /* Slightly darker matte black for canvas */
+  }
+  
+  .container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  #ui {
+    text-align: center;
+    font-size: 10px;
+    margin-top: 10px;
+  }
+  
+  #score {
+    margin-top: 10px;
+    font-size: 40px;
+    font-weight: 800;
+    color: #ff4d4d; /* Red color for score */
+  }
+  
+  .noselect {
+    user-select: none;
+  }
+  
+  #replay {
+    font-size: 15px;
+    padding: 10px 20px;
+    background: #333333; /* Dark matte black for button */
+    border: none;
+    color: #ff4d4d; /* Red color for button text */
+    border-radius: 20px;
+    font-weight: 800;
+    cursor: pointer;
+    transition: all 200ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  #replay:hover {
+    background: #555555; /* Slightly lighter dark matte black on hover */
+    color: #ffffff; /* White color for button text on hover */
+    transition: all 200ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  @media (max-width: 600px) {
+    #replay {
+      margin-bottom: 20px;
+    }
+  
+    #replay,
+    h2 {
+      transform: rotate(0deg);
+    }
+  
+    #ui {
+      flex-flow: row wrap;
+      margin-bottom: 20px;
+    }
+  
+    #score {
+      margin-top: 0;
+      margin-left: 20px;
+    }
+  
+    .container {
+      flex-flow: column wrap;
+    }
+  }
+  
+  #author {
+    text-align: center;
+    padding-bottom: 10px;
+  }
+  
